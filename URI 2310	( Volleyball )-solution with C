@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, s, b, a, s1, b1,a1, i;
+    double sums = 0.00, sumb = 0.00, suma = 0.00;
+    double sums1 = 0.00, sumb1 = 0.00, suma1 = 0.00;
+    double anss, ansb, ansa;
+    char name[10000];
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+    {
+        scanf("%s", name);
+        scanf("%d%d%d", &s, &b, &a);
+        scanf("%d%d%d", &s1, &b1, &a1);
+        sums += s; sumb += b; suma += a;
+        sums1 += s1; sumb1 += b1; suma1 += a1;
+    }
+    anss = (sums1/sums)*100.00;
+    ansb = (sumb1/sumb)*100.00;
+    ansa = (suma1/suma)*100.00;
+    
+    printf("Pontos de Saque: %.2lf %%.\n", anss);
+    printf("Pontos de Bloqueio: %.2lf %%.\n", ansb);
+    printf("Pontos de Ataque: %.2lf %%.\n", ansa);
+    return 0;
+}
