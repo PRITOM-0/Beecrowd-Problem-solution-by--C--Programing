@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    int n,len,i,j;
+    char ar[10000],arr[10000];
+    scanf("%d",&n);
+    //getchar();
+    while(n--){
+       scanf("%s",&ar);
+       j=0;
+       len=strlen(ar);
+       for(i=len-1;i>=0;i--){
+        if(ar[i]>='a'&&ar[i]<='z'){
+                arr[j]=ar[i];
+                j++;
+        }
+       }
+       arr[j]='\0';
+       printf("%s\n",arr);
+    }
+return 0;
+}
