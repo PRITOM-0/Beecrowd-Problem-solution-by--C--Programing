@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,am;
+    int sumc=0,sumr=0,sums=0,tsum;
+    float c,r,s;
+    char an;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+
+        scanf("%d %c",&am,&an);
+        if(an=='C'){
+           sumc=sumc+am;
+        }
+        else if(an=='R'){
+           sumr=sumr+am;
+        }
+        else if(an=='S'){
+           sums=sums+am;
+        }
+    }
+
+    tsum=sumc+sumr+sums;
+    c=(sumc*100.00)/tsum;
+    r=(sumr*100.00)/tsum;
+    s=(sums*100.00)/tsum;
+    printf("Total: %d cobaias\n",tsum);
+    printf("Total de coelhos: %d\n",sumc);
+    printf("Total de ratos: %d\n",sumr);
+    printf("Total de sapos: %d\n",sums);
+    printf("Percentual de coelhos: %0.2f %\n",c);
+    printf("Percentual de ratos: %0.2f %\n",r);
+    printf("Percentual de sapos: %0.2f %\n",s);
+
+
+    return 0;
+}
