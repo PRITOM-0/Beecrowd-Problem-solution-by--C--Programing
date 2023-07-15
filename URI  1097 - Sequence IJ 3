@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+
+   int I,J,n=5,m=7;
+   for(I=1;I<=9;I=I+2){
+
+    for(J=m;J>=n;J--){
+        printf("I=%d J=%d\n",I,J);
+
+    }
+m=m+2;n=n+2;
+   }
+    return 0;
+}
