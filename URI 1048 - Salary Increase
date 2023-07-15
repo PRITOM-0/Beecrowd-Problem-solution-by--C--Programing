@@ -1,0 +1,38 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    float s,ns,n;
+    int r;
+    scanf("%f",&s);
+    
+    if(s>=0&&s<=400.00){
+        n=(s*15/100.00);
+        ns=s+n;
+        r=15;
+    }
+    else if(s>=400.01&&s<=800.00){
+        n=((s*12)/100.00);
+        ns=s+n;
+        r=12;
+    }
+    else if(s>=800.01&&s<=1200.00){
+        n=(s*10/100.00);
+        ns=s+n;
+        r=10;
+    }
+    else if(s>=1200.01&&s<=2000.00){
+        n=(s*7/100.00);
+        ns=s+n;
+        r=7;
+    }
+    else if(s>2000.00){
+        n=(s*4/100.00);
+        ns=s+n;
+        r=4;
+    }
+ printf("Novo salario: %0.2f\n",ns);
+ printf("Reajuste ganho: %0.2f\n",n);
+ printf("Em percentual: %d %\n",r);
+    return 0;
+}
