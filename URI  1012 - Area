@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double a,b,c,pi=3.14159,tri,cir,tra,squ,rec;
+    scanf("%lf%lf%lf",&a,&b,&c);
+    tri=0.5*a*c;
+    cir=pi*c*c;
+    tra=(a+b)*c/2;
+    squ=b*b;
+    rec=a*b;
+    
+    printf("TRIANGULO: %0.3lf\n",tri);
+    printf("CIRCULO: %0.3lf\n",cir);
+    printf("TRAPEZIO: %0.3lf\n",tra);
+    printf("QUADRADO: %0.3lf\n",squ);
+    printf("RETANGULO: %0.3lf\n",rec);
+ 
+    return 0;
+}
