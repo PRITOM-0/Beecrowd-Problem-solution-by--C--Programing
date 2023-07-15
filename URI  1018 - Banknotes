@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int N,n,p,b,d,pp,dd,a;
+    scanf("%d",&N);
+    printf("%d\n",N);
+    n=N/100;
+    p=(N-(100*n))/50;
+    b=(N-(100*n+50*p))/20;
+    d=(N-(100*n+50*p+b*20))/10;
+    pp=(N-(100*n+50*p+b*20+d*10))/5;
+    dd=(N-(100*n+50*p+b*20+d*10+pp*5))/2;
+    a=N-(100*n+50*p+b*20+d*10+pp*5+dd*2);
+    printf("%d nota(s) de R$ 100,00\n",n);
+    printf("%d nota(s) de R$ 50,00\n",p);
+    printf("%d nota(s) de R$ 20,00\n",b);
+    printf("%d nota(s) de R$ 10,00\n",d);
+    printf("%d nota(s) de R$ 5,00\n",pp);
+    printf("%d nota(s) de R$ 2,00\n",dd);
+    printf("%d nota(s) de R$ 1,00\n",a);
+    return 0;
+}
