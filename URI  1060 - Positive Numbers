@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    float a,b,c,d,e,f;
+    int A;
+    scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);
+    A=0;
+    if(a>0){
+        A=A+1;
+    }
+    if(b>0){
+        A=A+1;
+    }
+    if(c>0){
+        A=A+1;
+    }
+    if(d>0){
+        A=A+1;
+    }
+    if(e>0){
+        A=A+1;
+    }
+    if(f>0){
+        A=A+1;
+    }
+    
+    printf("%d valores positivos\n",A);
+    return 0;
+}
