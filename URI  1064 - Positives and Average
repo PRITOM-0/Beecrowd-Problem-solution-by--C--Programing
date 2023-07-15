@@ -1,0 +1,35 @@
+#include <stdio.h>
+ 
+int main() {
+    int c=0;
+   float num[6],t=0;
+   scanf("%f%f%f%f%f%f",&num[0],&num[1],&num[2],&num[3],&num[4],&num[5]);
+  
+  if(num[0]>0){
+      c++;
+      t=t+num[0];
+  }
+  if(num[1]>0){
+      c++;
+      t=t+num[1];
+  }
+  if(num[2]>0){
+      c++;
+      t=t+num[2];
+  }
+  if(num[3]>0){
+      c++;
+      t=t+num[3];
+  }
+  if(num[4]>0){
+      c++;
+      t=t+num[4];
+  }
+  if(num[5]>0){
+      c++;
+      t=t+num[5];
+  }
+  printf("%d valores positivos\n%0.1f\n",c,t/c);
+  
+    return 0;
+}
